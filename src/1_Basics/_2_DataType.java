@@ -20,6 +20,15 @@ class _2_DataType{
         byte takeCastedNine = (byte) takeNine;
         int takePI = (int) PI;
 
+        // if I typecast int TO byte --> the LSB 8 bits will be casted to byte.
+
+        // String typecast
+        String six = "6"
+//        int num_2 = (int) six;    // String to int direct typecast not possible
+        int num_3 = 3;
+        String three = num_3+"";    // int to String typecast way 1
+        String four = (String) three;    // int to String typecast way 2
+
         //Shift operator --> The binary value of the number will be shifted 1 bit Left/Right
         int num = 6;                // 0110
         int numRightShift = 6>>1;   // 0011

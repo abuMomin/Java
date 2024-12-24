@@ -8,7 +8,8 @@ class _3_Array{
     }
 
     public static void main(String[] args){
-        // array initialization while declaration
+
+        // array initialization while declaration using direct assignment
         int[] arr_1 = {1,2,3,4,5};
 
         // passing the array as parameter
@@ -19,5 +20,19 @@ class _3_Array{
             System.out.println(arr_1[i]);
         }
         System.out.println("Array is pass by reference or reference type.");
+
+        // ARRAY INITALIZATION while DECLARATION
+        int[] arr_2 = new int[10];      // each index value is 0
+        int size = 15;
+        double[] arr_3 = new double[size];  // each index value is 0.0
+
+        // ARRAY INITALIZATION while DECLARATION --> direct assignment
+        int[] arr_4 = {1,2,3,4,5};
+        int[] arr_5;
+        arr_5 = new int[]{5,6,7,8,9};
     }
 }
+
+/* QnA
+
+ */
