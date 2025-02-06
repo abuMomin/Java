@@ -1,9 +1,5 @@
 package $2_ClassNObject;
 /* Key Takeaways
-// Class allows a function/method inside it which is the one of the main property of an OOP Language, than a Structured language such as, C.
-// We can write many classes in 1 java class file. which can not be public. only the main java class of the file can be public
-// Class variables are called = attributes. Class functions are called = function
-// an instance of a class is called = an object
 */
 
 //-----------------
@@ -28,10 +24,11 @@ class Student{
     }
 }
 
-public class _7_ClassObject {
+public class _1_ClassObject {
     // the main function/method
     public static void main(String[] args) {
-        Student std_1; //a null reference --> which holds the memory/space for an object of Student class.
+        Student std_1; //a null reference in the memory --> which is able to hold an object of Student class.
+        // when `new` keyword with constructor is used --> we assign an object to that null reference which has been created previously.
         std_1 = new Student();  // constructor --> to create an object --> a special method which has similar name to class name.
 
         std_1.name = "Win";
@@ -46,5 +43,4 @@ public class _7_ClassObject {
 }
 
 /* QnA
-
  */
