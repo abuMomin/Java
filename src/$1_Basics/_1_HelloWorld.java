@@ -20,11 +20,12 @@ class _1_HelloWorld {       //  good to write class name's first letter in Capit
 
 /* QnA:
 1. What is String[] args?
-    Ans: The public static void main(String[] args) method in Java is the entry point for any Java program.
-    The keyword public makes this method accessible from anywhere, ensuring the program can start executing from this point.
-    static allows the method to be called without creating an instance of the class, making it easier to run the program directly.
-    void indicates that the method doesn't return any value, and
-    String[] args is an array that stores command-line arguments, allowing users to input data when they run the program.
+    Ans: The public static void main(String[] args) method in Java is the entry point for any Java program. The keywords
+    `public` makes this method accessible from anywhere,
+    `static` allows the method to be called without creating an instance (object) of the class, making it easier to run the program directly.
+    `void` indicates that the method doesn't return any value,
+    `main` is the name of the method which indicates start executing any java program from this point, and
+    `String[] args` is an array that stores command-line arguments, allowing users to input data when they run the program.
     This setup is essential for Java programs to function correctly.
 
 2. Why I can't write 2 main functions in one java project?

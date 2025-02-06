@@ -26,6 +26,7 @@ class _3_Array{
         //--------------------------
         // ARRAY INITALIZATION while DECLARATION
         int[] arr_2 = new int[10];      // each index value is 0
+        // new int[] --> constructor --> to create an array object
         int size = 15;
         double[] arr_3 = new double[size];  // each index value is 0.0
         printArray(arr_3);
@@ -37,8 +38,9 @@ class _3_Array{
 
         //-------------------
         // 2D array --> Direct Initialization
-        int[][] arr_2D = {{1,2,3,}, {3,2}};       // Java multi-dimensional arrays need NOT TO BE RECTANGULAR
+        int[][] arr_2D = {{1,2,3,}, {3,2},{4,7,1,98}};       // Java multi-dimensional arrays can be nonRECTANGULAR.
         printArray(arr_2D);
+        System.out.println("A nonRectangular 2-D Array");
 
         // 2D array  --> Initialization using Loop
         int[][] arr_2D_2 = new int[10][12];
