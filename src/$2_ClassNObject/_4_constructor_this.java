@@ -1,6 +1,14 @@
 package $2_ClassNObject;
 /* Key Takeaways
-
+// Instance Variable Initialization (3) -->  Constructor
+// constructor is a method, has the same name as a CLASS, with no return type.
+// constructor can never be explicitly called, always executed after new object creation.
+// When no constructor is written in the class, the class assigns a default constructor.
+// Default constructor --> initializes all the instance variables to their default values. --> therefore no parameter required.
+// When manual constructor is written, default constructor dies.
+// We can write multiple constructor as long as each constructor has different definition(parameter)
+// Constructor can take input outside class --> A benefit.
+// this Keyword --> this` is a reference which refers to the current object.
  */
 class BankAccounts {
     String accName;
@@ -13,6 +21,7 @@ class BankAccounts {
 
     BankAccounts(String accName, double balance, int accNumber){
                                                     // Manual constructor
+        // `this` refers the instance_variable of the class' object, not the local parameter.
         this.accName = accName;
         this.balance = balance;
         this.accNumber = accNumber;
@@ -29,7 +38,7 @@ class BankAccounts {
         }
     }
 }
-public class _4_constructor {
+public class _4_constructor_this {
     public static void main(String[] args) {
         int[] accNumbers = {123541, 5435543, 4732645};
         String[] accNames = {"Win", "Enan", "Chadni"};
@@ -41,6 +50,7 @@ public class _4_constructor {
         for(int i = 0; i < bankAccounts.length; i++){
             //Each object needs to be initialized separately using Loop
             // assigning instances using manual constructor
+            // constructor can never be explicitely called, always executed after new object creation.
             bankAccounts[i] = new BankAccounts(accNames[i], accBalances[i], accNumbers[i]);
         }
 
