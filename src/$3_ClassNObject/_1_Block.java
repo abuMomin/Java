@@ -2,7 +2,7 @@ package $3_ClassNObject;
 
 /* Key Takeaways
 // Scope of the variable
-//Scope of variables ->a variable/method declared inside a block is only recognized by the other members of the same block/inner block.
+//Scope of variables -> a variable/method declared inside a block is only recognized by the other members of the same block/inner block.
  */
 class Employee{
 

@@ -1,6 +1,6 @@
 package $1_Basics;
 /* Key Takeaways
-// If there is any input method called/used before it --> a blank `nextLine()` has to be called to avoid input errors.
+// If there is any input method called/used before scan.nextLine() --> a blank `nextLine()` has to be called to avoid input errors.
 */
 import java.util.Scanner;
 
