@@ -55,6 +55,9 @@ public class _1_ClassObject {
 
 /* QnA
 1. Why JRE is set on IDE, but JDK is not? Difference between JDK and JRE?
+    Ans: JRE is a subset of JDK. JDK includes JVM, JRE, Java Compiler and all the java standard library to reate, run, debug, compile,
+    test, modify java programs.
+    Java Code --> Compiler (JDK) --> Java class files (Bytecodes) [JRE] --> JVM --> Machine Code (0,1) --> Operations performed by the computer.
 
 2. How to generate Random strings in Java??
  */

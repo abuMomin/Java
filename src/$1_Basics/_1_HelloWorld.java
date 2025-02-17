@@ -7,7 +7,7 @@ package $1_Basics;
 // No explicit use of pointer, uses reference.
 // The class name should start with Capital Letter.
 // One java file can only have one public class, otherwise, it will be treated as separate files.
-// Java Code --> Compiler --> Java Bytecode --> JVM --> Machine Code (0,1)
+// Java Code --> Compiler (JDK) --> Java class files (Bytecodes) [JRE] --> JVM --> Machine Code (0,1) --> Operations performed by the computer.
 */
 class _1_HelloWorld {       //  good to write class name's first letter in Capital
     public static void main(String[] args) {
@@ -37,7 +37,16 @@ class _1_HelloWorld {       //  good to write class name's first letter in Capit
 3. Can I write two public classes in one Java file? [INTERVIEW QUE]
     Ans: Yes, if the classes are nested. and No, if they are in the same level and not nested.
 
-4. What is JVM?
-    Ans: JVM (Java Virtual Machine) is an abstract machine. It is a specification that provides runtime environment
-    in which java bytecode can be executed.
+4. What is JVM, JDK, JRE?
+    Ans: Tutorial:  https://www.youtube.com/watch?v=KctLuhwFEQ8
+    JDK = Java Development Kit (includes JVM, JRE, Java Compiler and java standard library). Includes everything to create, run, debug, compile,
+    test, modify java programs. When you're developing java program within an IDE, you need the full JDK.
+    JRE = Java Runtime Environment (includes JVM and java standard library). just to run java programs, without creating/modifying programs.
+    Has java standard library (classes) to run a java program such as: I/O, helper classes, string, math, exception, object, sql, and many more.
+    When you're simply running a pre-compiled Java application AKA java bytecodes, you only need the JRE.
+    JVM = JVM (Java Virtual Machine) is an abstract machine. It is a specification which is included in JRE that provides java runtime environment (JRE)
+    to execute bytecodes of the java program.  Responsible for loading up the program into the memory and executing its operations.
+    supports multi-threading, garbage collection, cross-platform support, security checks, and many more.
+
+    Java Code --> Compiler (JDK) --> Java class files (Bytecodes) [JRE] --> JVM --> Machine Code (0,1) --> Operations performed by the computer.
  */

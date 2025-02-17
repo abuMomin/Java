@@ -3,7 +3,10 @@ package $1_Basics;
 import java.util.Scanner;
 
 /* Key Takeaways
+// The == operator checks reference equality for objects and value equality for primitives.
+// therefore, to check equality of content of objects (strings, objects) --> use `.equals()`
 // User input --> using class Scanner
+// String Pool: When two strings have the same content and are created without the new keyword [new String(“HELLO”)], they point to the same memory location in the pool.
 */
 public class _5_IfElse {
     public static void main(String[] args) {
