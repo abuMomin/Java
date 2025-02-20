@@ -3,7 +3,7 @@ package $3_ClassNObject;
 
 import java.util.Scanner;
 
-class Book{
+class Books{
     int quantity;
     String name;
     double price;
@@ -22,12 +22,12 @@ class Book{
 }
 public class _3_ClassTest_1 {
     public static void main(String[] args) {
-        Book[] books = new Book[2];
+        Books[] books = new Books[2];
         Scanner scan = new Scanner(System.in);
 
         for (int i = 0; i < 2; i++){
             System.out.println("Enter book " + (i+1) + " details (Quantity, Name, Price):");
-                books[i] = new Book();
+                books[i] = new Books();
                 books[i].quantity = scan.nextInt();
                 scan.nextLine();
                 books[i].name = scan.nextLine();

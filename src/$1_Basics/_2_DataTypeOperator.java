@@ -4,8 +4,10 @@ package $1_Basics;
 // 2 types of datatype in Java, 1. Primitive type, 2. class/reference type
 // Reference type = String, any_class_written_by_you
 // Primitive type = int, short, long, float, double, bool, char, byte
+// The == operator checks reference equality for objects and value equality for primitives.
+// .equals() --> Compares the content of objects.
 */
-class _2_DataType{
+class _2_DataTypeOperator {
     public static void main(String[] args) {
         char temp[] = {'1', 'a', 'c'};  // array of character is String
         char tempChar = 'b';
@@ -49,7 +51,7 @@ class _2_DataType{
 /* QnA
 1. What is the difference, usecases, pros and cons of reference type and primitive type?
     Ans: Primitive data type store simple values directly in memory and are not objects. Unlike primitive types,
-    reference types store references (memory addresses) to the actual data. Here, String greeting holds a reference to the
+    reference types store references (memory addresses) to the actual data. String holds a reference to the
     memory location where the actual string data is stored.
     Memory Allocation:
     Primitive Types: Memory is allocated on the stack.

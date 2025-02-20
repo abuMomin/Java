@@ -1,4 +1,4 @@
-package $5_Encapsulation.PackageBook;
+package $5_Encapsulation._1_PackageBook;
 
 import java.util.Random;
 

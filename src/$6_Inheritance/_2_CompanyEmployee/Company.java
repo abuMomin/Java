@@ -1,10 +1,11 @@
 package $6_Inheritance._2_CompanyEmployee;
 /* Key Takeaways
 // super keyword is necessary as --> the superclass has one parameter constructor only --> superclass constructor execution is mandatory before subclass constructor object creation.
-// super keyword usage has to be the first operation in childclass, before any operation in its own constructor.
+// In case of constructor, super keyword usage has to be the first operation in childclass, before any operation in its own constructor.
+// default parent class constructor called when --> no defined parent class constructor OR parent class constructor is parameterless
+// If a constructor does not explicitly invoke a superclass constructor, the Java compiler automatically inserts a call to the no-argument constructor of the superclass.
 // abstract in details will be discussed later.
 */
-
 import java.util.Random;
 
 abstract class Employee{        // became an abstract superclass because it has at-least one property/method (here getSalary() method) abstract.
@@ -24,6 +25,7 @@ abstract class Employee{        // became an abstract superclass because it has 
 class Salaried extends Employee{
     double salary = 25000;
     Salaried(String name) {
+        // default parent class constructor called when --> no defined parent class constructor OR parent class constructor is parameterless.
         // super keyword is necessary as --> the superclass has one parameter constructor only --> superclass constructor execution is mandatory before subclass constructor object creation.
         super(name);
     }

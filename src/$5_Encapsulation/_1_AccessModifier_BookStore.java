@@ -13,7 +13,7 @@ package $5_Encapsulation;
 // default (no access modifier) --> act as public to other classes/subclasses in the same package. act as private for other classes/subclasses in a different package.
 */
 
-import $5_Encapsulation.PackageBook.Book;
+import $5_Encapsulation._1_PackageBook.Book;
 
 public class _1_AccessModifier_BookStore {
     // No. of books the library ever affiliated (sold, selling, will sell) with.

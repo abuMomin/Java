@@ -34,7 +34,7 @@ class Employee{
     //Scope of variables ->a variable/method declared inside a block is only recognized by the other members of the same block/inner block.
     void calculateInterest(double balance) //balance is only recognized inside the method
     {
-        // Scope of this `temp` and `interest` variable is only inside the `calculateInterest` method.
+        // Scope of this `BoxMain` and `interest` variable is only inside the `calculateInterest` method.
         double temp;
         float interest;
         if(balance > 10000)
