@@ -1,5 +1,7 @@
-package $6_Inheritance.Assignment_3;
+package $7_SubclassPolymorphism.Assignment_4;
 // Assignment Question: assets/files/pdf_4_Assignment.pdf
+
+
 public class ShapeArea {
     public static void main(String[] args) {
         Shape[] shapes = new Shape[5];

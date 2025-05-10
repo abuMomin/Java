@@ -4,7 +4,7 @@ import java.util.Random;
 import java.util.Scanner;
 
 /* Key Takeaways
-// static methods --> Static Methods does not require to create a class instance (object) to CALL it. it can be by it's method if,
+// static methods --> Static Methods does not require to create a class instance (object) to CALL it. it can be called by it's method if,
 it is within the same class from where it has been called.
 */
 public class _4_Loop {

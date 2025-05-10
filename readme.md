@@ -11,17 +11,24 @@
 4. Explore concepts and try out new things. 
 5. Read the Slides 
 6. Study the lecture notes
-7. Merge the codes. Make the repository clean. 
+7. Merge the codes of prev. codebase. Make the repository clean. 
 
 ---
 **_Local Repo Name: Java_COMPLETE_**
 
 ---
-To-do:
-5. Theory class till 12
-6. Followup Lecture Slides
-7. Followup Lecture notes
-8. Merge codes
+### To-do:
+1. Theory Slides Read 
+2. Theory notes read
+2. Theory class till 24
+2. Followup Lecture Slides
+3. Followup Lecture notes
+4. Merge codes
+5. Lab Slides read
+6. Lab Lecture till 12
+7. Lab notes read
+8. Lab Code Merge
 
 --
-- Java Strings need further study --> Immutability, Pass-by-value, operators/methods
+### Further Study:
+- Java Strings need further study --> USAGES, Immutability, Pass-by-value, operators/methods

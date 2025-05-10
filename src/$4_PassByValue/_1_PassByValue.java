@@ -2,13 +2,14 @@ package $4_PassByValue;
 /* Key Takeaways
 // Tutorial Link: https://www.youtube.com/watch?v=-5NC5_sI-vQ
 // Java is ALWAYS pass by value. For primitive types it works in conventional way. However, for Object-types it works differently.
-// For Object-types (Object, Array, String), while Java is still pass-by-value when it is passed in through method parameter, the value that's copied for objects is a reference “memory address of the object”  not the object itself.
+// For Object-types (Object, Array, String), while Java is still pass-by-value when it is passed in through method parameter, the value that's copied for objects is a reference “memory address of the object”, not the object itself.
 // Therefore, in object-types, a copy of the reference (memory address) is passed.
-// This means that if you modify the contents of the array/object within the method, those changes are reflected in the original array outside the method.
-// Because both the original reference and the copied reference point to the same array in memory.
-// However, as it passes memory address as pass-by-value, if we try to reassign_a_new_object to that reference within the method which changes its reference value, no changes are reflected outside that method in the original object.
+// This means that if you modify the contents of the array/object within a method, those changes are reflected in the original array outside the method.
+// Because both the original reference, and the copied reference, point to the same array in memory.
+// However, as it passes memory address as pass-by-value, if we try to reassign_a_new_object to that reference (within an outside method), it changes its reference value, no changes are reflected outside that method in the original object.
 // Here, it shows it's true pass-by-value property.
 // Hence, Whether we try to swap object-types references OR try to reassign new object in that reference, no reflection is made outside the method.
+// ------------------- EXCEPTION
 // One exception is Strings, which are also Object but has IMMUTABLE property.  This means that once a String object is created, its contents cannot be changed.
 // When you pass a String to a method, a copy of the reference is passed, just like with arrays/objects.
 // Since Strings are immutable, any operation that seems to "modify" the String actually creates a new String object with different reference (even though the variable name is the same). The original String remains unchanged after they are created.
@@ -22,8 +23,6 @@ public class _1_PassByValue {
         swapNumbers(numb1, numb2);
         // original variables didn't change
         System.out.println("Swapping numbers don't work:\t"+ numb1 + "\t" + numb2);
-
-
 
 
         System.out.println("\n----- Object Types (Object) ---- Pass-by-Value but only Memory_Address_of_that_Reference");
@@ -48,6 +47,7 @@ public class _1_PassByValue {
         c1.printData();
 
 
+        // ARRAY
 
 
         System.out.println("\n----- Object Types (Array) ---- Pass-by-Value but only Memory_Address_of_that_Reference");
@@ -71,6 +71,7 @@ public class _1_PassByValue {
         printArray(array_1);
 
 
+        // STRING
 
 
         System.out.println("\n----- Strings (Object Type) ---- Pass-by-Value but only Memory_Address_of_that_Reference AND String is immutable");
@@ -139,7 +140,7 @@ public class _1_PassByValue {
 }
 
 class CustomClass{
-    int a;
+    private int a;
 
     CustomClass(int data){
         a = data;

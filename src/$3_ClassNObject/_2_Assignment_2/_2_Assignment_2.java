@@ -1,8 +1,8 @@
 package $3_ClassNObject._2_Assignment_2;
+// Assignment Question: assets/files/pdf_2.pdf
 
 import java.util.Random;
 
-// Assignment Question: assets/files/pdf_2.pdf
 public class _2_Assignment_2 {
     public static void main(String[] args) {
         Book[] bookstore = new Book[4];
@@ -16,7 +16,7 @@ public class _2_Assignment_2 {
         bookstore[0].setName("Data Structure and Algorithm");
         bookstore[0].setQuantity(50);
 
-        for (Book book: bookstore) {
+        for (Book book: bookstore){
             book.printInfo();
         }
 

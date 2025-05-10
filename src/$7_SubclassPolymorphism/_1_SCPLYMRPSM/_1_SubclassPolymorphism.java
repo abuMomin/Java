@@ -14,6 +14,7 @@ class Parent{ //superclass
     private int privateVariable=3;      // will not be inherited
     protected int parentVariable=4;
     int var=7;
+    // constructor
     public Parent(int a){
         System.out.println("Parent Class");
     }
@@ -72,18 +73,19 @@ class GrandChild extends Child{
     public int childVariable=5;
     public void childMethod(){
         System.out.println("Hello from child Method");
+    // inherited overridden parentMethod()
     public void parentMethod() {
         childVariable = 10;
         System.out.println("Hello from parent Method inside child class");
         super.parentMethod();
     }
     public void originParentMethod(){
-        super.parentMethod();   // child can now call the origin parentMethod()
+        super.parentMethod();   // grandChild can now call the origin parentMethod()
     }
     }
      */
     public GrandChild(){
-        //super()
+        //super() call is optional, because Child() constructor is parameterless
 
         System.out.println("Grandchild Class");
     }
@@ -94,10 +96,6 @@ class GrandChild extends Child{
         System.out.println("Hello from parent Method inside grandchild class\t" + grandVar);
     }
 
-    public void originParentMethod(){
-        super.originParentMethod();     // called child class' method
-    }
-
 }
 
 public class _1_SubclassPolymorphism {
@@ -105,7 +103,7 @@ public class _1_SubclassPolymorphism {
         // Subclass polymorphism
         Parent A = new Child();
         // The method should exist in superclass to call it using subclass-polymorphism
-        // when the method is called in Subclass Polymorphism, execution  --> the subclass method will be executed
+        // when the method is called in Subclass Polymorphism, execution  --> the lowest subclass method will be executed
         A.parentMethod();
 
         //A.childMethod();   -> Not possible as `childMethod()` doesn't exist in superclass --> have to do typecasting
@@ -117,7 +115,7 @@ public class _1_SubclassPolymorphism {
         C.parentMethod();
 
         GrandChild gc_1 = new GrandChild();
-        gc_1.originParentMethod();
+        gc_1.originParentMethod();      // executed the inherited originParentMethod() from Child class
 
     }
 }

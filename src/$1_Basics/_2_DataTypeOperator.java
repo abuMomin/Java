@@ -3,7 +3,7 @@ package $1_Basics;
 /* Key Takeaways
 // 2 types of datatype in Java, 1. Primitive type, 2. class/reference type
 // Reference type = String, any_class_written_by_you
-// Primitive type = int, short, long, float, double, bool, char, byte
+// Primitive type =  byte, int, short, long, float, double, bool, char
 // The == operator checks reference equality for objects and value equality for primitives.
 // .equals() --> Compares the content of objects.
 */
@@ -33,6 +33,8 @@ class _2_DataTypeOperator {
         // String typecast
         String six = "6";
 //        int num_2 = (int) six;    // String to int direct typecast not possible
+        int takeStringToInt = Integer.parseInt(six);       // casted to int, if the string includes other than int, throws exception.
+        System.out.println(takeStringToInt);
         int num_3 = 3;
         String three = num_3+"";    // int to String typecast way 1
         String four = Integer.toString(num_3);    // int to String typecast way 2
@@ -42,7 +44,11 @@ class _2_DataTypeOperator {
         int num = 6;                // 0110
         int numRightShift = 6>>1;   // 0011
         int numLeftShift = 6<<1;    // 1100
+        int num2RightShift = 22>>2;   // 10110 --> 00101        // shifted to bits to right
+        int num2LeftShift = 22<<2;   // 10110 --> 1011000        // shifted to bits to left
+
         System.out.println(numRightShift + " " + numLeftShift);
+        System.out.println(num2RightShift + " " + num2LeftShift);
 
     }
 

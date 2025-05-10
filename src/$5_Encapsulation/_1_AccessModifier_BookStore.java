@@ -8,7 +8,7 @@ package $5_Encapsulation;
 // public --> accessible (Class, methods, and instance_variables) to any classes/subclasses of same/different package. Just need to import its path from SOURCE folder.
 //              Every method, instance_variable has to be made public in order to access everything from a public class.
 // private --> only accessible to its own class.
-                Mainly used for not providing direct access to sensitive information of instance_variables.
+                Mainly used for LIMITING direct access to sensitive information of instance_variables.
 // protected --> accessible to same package classes/subclasses, and different package subclasses.
 // default (no access modifier) --> act as public to other classes/subclasses in the same package. act as private for other classes/subclasses in a different package.
 */
@@ -18,6 +18,7 @@ import $5_Encapsulation._1_PackageBook.Book;
 public class _1_AccessModifier_BookStore {
     // No. of books the library ever affiliated (sold, selling, will sell) with.
     static int booksOfStore = 5;
+
     public static void main(String[] args) {
         Book[] books = new Book[50];
 

@@ -1,7 +1,7 @@
 package $1_Basics;
 
 /* Key Takeaways
-// One Java project can have one main class only.
+// One Java project can have one main function only.
 // Java doesn't allow to write any method or variable (like global variable, function in C) outside the class, thats why java is a pure OOP language.
 // No standalone function, everything is a part of class
 // No explicit use of pointer, uses reference.
@@ -40,7 +40,7 @@ class _1_HelloWorld {       //  good to write class name's first letter in Capit
 4. What is JVM, JDK, JRE?
     Ans: Tutorial:  https://www.youtube.com/watch?v=KctLuhwFEQ8
     JDK = Java Development Kit (includes JVM, JRE, Java Compiler and java standard library). Includes everything to create, run, debug, compile,
-    test, modify java programs. When you're developing java program within an IDE, you need the full JDK.
+    Test, modify java programs. When you're developing java program within an IDE, you need the full JDK.
     JRE = Java Runtime Environment (includes JVM and java standard library). just to run java programs, without creating/modifying programs.
     Has java standard library (classes) to run a java program such as: I/O, helper classes, string, math, exception, object, sql, and many more.
     When you're simply running a pre-compiled Java application AKA java bytecodes, you only need the JRE.

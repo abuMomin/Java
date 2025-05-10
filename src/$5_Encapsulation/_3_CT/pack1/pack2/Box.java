@@ -1,9 +1,9 @@
-package $5_Encapsulation._2_CT.pack1.pack2;
+package $5_Encapsulation._3_CT.pack1.pack2;
 
 public class Box {
-    double boxLength;
-    double boxHeight;
-    double boxWidth;
+    private double boxLength;
+    private double boxHeight;
+    private double boxWidth;
 
     public Box(double cubeLength) {
         boxLength = cubeLength;

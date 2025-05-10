@@ -6,7 +6,7 @@ package $2_ClassNObject;
 // When no constructor is written in the class, the class assigns a default constructor.
 // Default constructor --> initializes all the instance variables to their default values. --> therefore no parameter required.
 // When manual constructor is written, default constructor dies.
-// We can write multiple constructor as long as each constructor has different definition(parameter)
+// We can write multiple constructors as long as each constructor has different definition (parameter).
 // Constructor can take input outside class --> A benefit.
 // this Keyword --> this` is a reference which refers to the current object.
  */
@@ -21,7 +21,7 @@ class BankAccounts {
 
     BankAccounts(String accName, double balance, int accNumber){
                                                     // Manual constructor
-        // `this` refers the instance_variable of the class' object, not the local parameter.
+        // `this` refers the instance_variable of the current object, not the local parameter.
         this.accName = accName;
         this.balance = balance;
         this.accNumber = accNumber;
@@ -49,15 +49,16 @@ public class _4_constructor_this {
 
         for(int i = 0; i < bankAccounts.length; i++){
             //Each object needs to be initialized separately using Loop
-            // assigning instances using manual constructor
+            // assigning instances using manual constructors
             // constructor can never be explicitely called, always executed after new object creation.
             bankAccounts[i] = new BankAccounts(accNames[i], accBalances[i], accNumbers[i]);
         }
 
         // Printing object properties using for-each loop
-        for (BankAccounts bnkAcc: bankAccounts){
+        for (BankAccounts bnkAcc : bankAccounts) {
             System.out.println("Account Name = " + bnkAcc.accName + ",\tAccount No. = " + bnkAcc.accNumber + ",\tAccount Balance = " + bnkAcc.getBalance());
         }
+
     }
 }
 

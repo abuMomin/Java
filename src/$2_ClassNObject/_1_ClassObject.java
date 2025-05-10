@@ -1,8 +1,8 @@
 package $2_ClassNObject;
 /* Key Takeaways
 // A class is a blueprint or prototype from which objects are created. It defines what should be in each object and how each object should behave.
-// An object is a software bundle of related state and behavior of a class. objects are often used to model the real-world.
-// a class is a template for an object,
+// An object is a software bundle of related state and behavior of a class. Objects are often used to model the real-world.
+// A class is a template for an object,
 // and an object is an instance of a class.
 // Class allows a function/method inside it which is the one of the main property of an OOP Language, than a Structured language such as, C.
 // Class variables are called = attributes/properties/instance_variables.
@@ -10,7 +10,7 @@ package $2_ClassNObject;
 // Thus, the data for one object is separate and unique from the data for another.
 // Class functions are called = Methods
 // As a general rule, it is the Methods that determine how a class’ data can be used.
-// We can write many classes in 1 java class file at the same level. which can not be public. only the main java class of the file can be public
+// We can write many classes in 1 java class file at the same level. which cannot be public. only the main java class of the file can be public
 */
 
 //-----------------
@@ -21,7 +21,7 @@ package $2_ClassNObject;
         String name;
         double cgpa;
     }student;
-  */
+ */
 class Student{
     int ID;         // attribute
     String name;    // attributes
@@ -55,8 +55,8 @@ public class _1_ClassObject {
 
 /* QnA
 1. Why JRE is set on IDE, but JDK is not? Difference between JDK and JRE?
-    Ans: JRE is a subset of JDK. JDK includes JVM, JRE, Java Compiler and all the java standard library to reate, run, debug, compile,
-    test, modify java programs.
+    Ans: JRE is a subset of JDK. JDK includes JVM, JRE, Java Compiler and all the java standard library to create, run, debug, compile,
+    Test, modify java programs.
     Java Code --> Compiler (JDK) --> Java class files (Bytecodes) [JRE] --> JVM --> Machine Code (0,1) --> Operations performed by the computer.
 
 2. How to generate Random strings in Java??

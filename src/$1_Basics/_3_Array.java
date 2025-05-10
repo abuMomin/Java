@@ -19,9 +19,9 @@ class _3_Array{
         // passing the array as parameter
         change(arr_1);
 
-        //Printing the array as parameter to check whether array's reference is passed OR value is passed
+        //The reference value of the array is passed, thus changing the references creates changes in the Array
         printArray(arr_1);
-        System.out.println("\nUnlike C++, Java Arrays are pass by reference or reference type.");
+        System.out.println("\nJava is always pass-by-value, Here, the reference value of array is passed. Thus, changing the references creates changes in the Array.");
 
         //--------------------------
         // ARRAY INITALIZATION while DECLARATION

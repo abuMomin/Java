@@ -7,7 +7,7 @@ package $6_Inheritance._1_Inheritance;
 // When a class inherits another class --> `extends` --> keyword is used.
 // class <subclass> extends <superclass>
 // Access Modifiers (and packages) play a crucial role in inheritance about which members of superclass would get access to subclasses.
-// For Example: private variable can not be accessed by its subclasses. default members of superclass are only accessible if they are in the same package as subclass. and so on.
+// For Example: private variable cannot be accessed by its subclasses. Default members of superclass are only accessible if they are in the same package as subclass. and so on.
 // A child class can have only one parent class, but a parent can have multiple children class. --> Multiple inheritance not supported in java
 // A child class can have unlimited grandchild and greatGrandchild classes --> Multi-level inheritance is supported in java.
 // Method Overriding = When a subclass redefines/modifies a method of its superclass. Not mandatory, it's a choice.

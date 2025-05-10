@@ -1,5 +1,5 @@
 package $3_ClassNObject;
-// Class-test Question: assets/files/pdf_3.pdf
+// Class-Test Question: assets/files/pdf_3.pdf
 
 import java.util.Scanner;
 
@@ -20,6 +20,7 @@ class Books{
         return quantity*price;
     }
 }
+
 public class _3_ClassTest_1 {
     public static void main(String[] args) {
         Books[] books = new Books[2];
@@ -29,7 +30,7 @@ public class _3_ClassTest_1 {
             System.out.println("Enter book " + (i+1) + " details (Quantity, Name, Price):");
                 books[i] = new Books();
                 books[i].quantity = scan.nextInt();
-                scan.nextLine();
+                scan.nextLine();                // clear the buffer for '\n' to avoid input errors.
                 books[i].name = scan.nextLine();
                 books[i].price = scan.nextDouble();
         }

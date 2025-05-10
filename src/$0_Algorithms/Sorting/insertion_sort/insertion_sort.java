@@ -1,4 +1,4 @@
-package $0_Algorithms.insertion_sort;
+package $0_Algorithms.Sorting.insertion_sort;
 
 import java.util.Scanner;
 

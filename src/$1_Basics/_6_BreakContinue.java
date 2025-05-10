@@ -38,7 +38,6 @@ public class _6_BreakContinue {
 
         //---- continue statement
         System.out.print("\ncontinue ........");
-        Outer:
         for ( int row = 0; row < 5; row++ ) {
             System.out.println("\nOuter loop: " + row);
             for ( int column = 0; column < 4; column++ ) {

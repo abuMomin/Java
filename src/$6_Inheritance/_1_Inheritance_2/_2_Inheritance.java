@@ -1,13 +1,12 @@
 package $6_Inheritance._1_Inheritance_2;
-/*
-// What will happen if a granChild reference calls a parentMethod(), which is overridden in child class but not in grandChild class?
-// Ans: It will execute the overridden parentMethod() from childClass. which is natural because the grandChild inherited the overridden parentMethod() from child.
+/* Key Takeaways
+
  */
 class Parent{
     private String par_name;
     int par_age;
     Parent(){
-        par_name = "Momin";
+        par_name = "Mominul";
         par_age = 60;
         System.out.println("Parent Class Constructor");
     }
@@ -56,7 +55,7 @@ class GrandChild extends Child{
         System.out.println("GrandChild Method, GrandChild Name: "+ grandChi_name+ ", Child Name: " + getChi_name() + ", Parent Name: " + getPar_name());
     }
 
-    // parentMethod() is not overridden in GrandChild.
+
 }
 
 public class _2_Inheritance {
@@ -75,5 +74,12 @@ public class _2_Inheritance {
         GrandChild gc1 = new GrandChild();
         // Calling the parentMethod which has been overriden in Child Class but not in grandChildClass
         gc1.parentMethod();
+        // get the actual parentMethod of parentClass from grandChildClass--> we cannot write super.super --> we have to leave an option behind, to execute the overridden method of parentclass in Childclass - to call it from grandChild class.
+        gc1.superParentMethodFromChild();
     }
 }
+
+/*
+1. What will happen if a granChild reference calls a parentMethod(), which is overridden in child class but not in grandChild class?
+    Ans: It will execute the overridden parentMethod() from childClass. which is natural because the grandChild inherited the overridden parentMethod() from child.
+ */

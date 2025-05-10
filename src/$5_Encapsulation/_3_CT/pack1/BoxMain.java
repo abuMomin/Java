@@ -1,7 +1,7 @@
-package $5_Encapsulation._2_CT.pack1;
+package $5_Encapsulation._3_CT.pack1;
 // CT Question: assets/images/fig_2_CT.png
 
-import $5_Encapsulation._2_CT.pack1.pack2.Box;
+import $5_Encapsulation._3_CT.pack1.pack2.Box;
 public class BoxMain {
     public static void main(String[] args) {
         Box[] boxArray = new Box[3];
